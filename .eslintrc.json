@@ -6,7 +6,6 @@
     "standard-with-typescript",
     "plugin:react/recommended",
     "plugin:import/recommended",
-    "plugin:import/typescript",
     "prettier"
   ],
   "overrides": [],
@@ -39,6 +38,9 @@
     "import/no-named-as-default": "off"
   },
   "settings": {
+    "react": {
+      "version": "detect"
+    },
     "import/ignore": ["react-native"],
     "import/resolver": {
       "node": {
