@@ -43,7 +43,8 @@
         "import/no-absolute-path": "off",
         "import/no-named-as-default": "off",
         "@typescript-eslint/consistent-type-definitions": "off",
-        "import/named": "off"
+        "import/named": "off",
+        "@typescript-eslint/no-namespace": "off"
     },
     "settings": {
         "react": {

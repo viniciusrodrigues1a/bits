@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Home } from "@/Home";
-
+import { RootNavigationContainer } from "./navigation";
 export const App = () => {
-  return <Home />;
+  return <RootNavigationContainer />;
 };

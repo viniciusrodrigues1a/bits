@@ -1,6 +1,7 @@
 import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+
+import { HomeNavigation } from "@/feature/home/navigation";
 
 const Stack = createStackNavigator();
 
@@ -13,14 +14,12 @@ export type StackNavigationParams = {
 };
 
 export const StackNavigation = () => (
-  <NavigationContainer>
-    <Stack.Navigator
-      screenOptions={{ headerShown: false }}
-      initialRouteName={StackNavigationRoutes.HOME_NAVIGATION}>
-      <Stack.Screen
-        name={StackNavigationRoutes.HOME_NAVIGATION}
-        component={() => {}}
-      />
-    </Stack.Navigator>
-  </NavigationContainer>
+  <Stack.Navigator
+    screenOptions={{ headerShown: false }}
+    initialRouteName={StackNavigationRoutes.HOME_NAVIGATION}>
+    <Stack.Screen
+      name={StackNavigationRoutes.HOME_NAVIGATION}
+      component={HomeNavigation}
+    />
+  </Stack.Navigator>
 );
