@@ -11,6 +11,6 @@ export type HomeParams = undefined;
 
 export const HomeContainer: React.FC<
   HomeNavigationScreenProps<HomeNavigationRoutes.HOME>
-> = () => {
+> = ({ navigation, route }) => {
   return <HomeView />;
 };
