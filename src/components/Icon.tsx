@@ -6,14 +6,15 @@ export type IconProps = {
   size: string | number;
   color: string;
   name: keyof typeof SvgIconList;
+  rotatation?: number;
 };
 
-export const Icon = ({ name, color, size }: IconProps) => {
+export const Icon = ({ name, color, size, rotatation }: IconProps) => {
   if (!(name in SvgIconList)) {
     return null;
   }
 
   const Component = SvgIconList[name];
 
-  return <Component color={color} size={size} />;
+  return <Component color={color} size={size} rotation={rotatation} />;
 };

@@ -1,4 +1,5 @@
 export type SvgProps = {
-    color: string;
-    size: string | number;
+  color: string;
+  size: string | number;
+  rotation?: number;
 };
